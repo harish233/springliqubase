@@ -5,8 +5,8 @@
 <title>NewtGlobal</title>
 </head>
 <body>
-
-	<h2>Welcome to NewtGlobal</h2>
+<form action="save">
+	<h2>Welcome to newt | global</h2>
 	
 	<h4>Register</h4>
 	
@@ -16,6 +16,6 @@
 	Profile : <input type="text"><br><br>
 	<input type="submit" value="Save Employee">
 	<input type="button" value="Get Employee">
-
+</form>
 </body>
 </html>
