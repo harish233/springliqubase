@@ -7,9 +7,9 @@
 <title>NewtGlobal</title>
 </head>
 <body>
-
-	<h2>Registration Success</h2>
-
-	<a href="home.jsp">New Register</a>
+<form action="home.do">
+	
+	<a href="home.jsp">Register</a>
+</form>
 </body>
 </html>
