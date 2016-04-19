@@ -18,11 +18,7 @@ public class Sample {
 	
 	@RequestMapping(value="home")
 	public ModelAndView home(){
-		System.out.println("hello newt");
 		ModelAndView mv = new ModelAndView();
-		List<Employee> list = sampleservice.getRecors();
-		System.out.println(list.isEmpty());
-		mv.addObject("emplist",list);
 		mv.setViewName("home.jsp");
 		return mv;
 	}
@@ -32,7 +28,8 @@ public class Sample {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("name :"+emp.getName());
 		sampleservice.save(emp);
-		
+		List<Employee> list = sampleservice.getRecords();
+		mv.addObject("emplist",list);
 		mv.setViewName("success.jsp");
 		return mv;
 		

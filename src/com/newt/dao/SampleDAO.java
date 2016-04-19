@@ -19,7 +19,8 @@ public class SampleDAO {
 		return emp;
 	}
 	
-	public List<Employee> getRecors(){
+	public List<Employee> getRecords(){
 		return template.find("from Employee");
 	}
+	
 }

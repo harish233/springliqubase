@@ -18,8 +18,8 @@ public class Sampleservice {
 		return sampledao.save(emp);
 	}
 	
-	public List<Employee> getRecors(){
-		return sampledao.getRecors();
+	public List<Employee> getRecords(){
+		return sampledao.getRecords();
 		
 	}
 }
