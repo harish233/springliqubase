@@ -16,23 +16,22 @@ public class Sample {
 	@Autowired
 	private Sampleservice sampleservice;
 	
-	@RequestMapping(value="home")
+	/*@RequestMapping(value="home")
 	public ModelAndView home(){
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("home.jsp");
 		return mv;
-	}
+	}*/
 	
 	@RequestMapping(value="save")
 	public ModelAndView save(Employee emp){
 		ModelAndView mv = new ModelAndView();
-		System.out.println("name :"+emp.getName());
-		sampleservice.save(emp);
+		/*System.out.println("name :"+emp.getName());
+		sampleservice.save(emp);*/
 		List<Employee> list = sampleservice.getRecords();
 		mv.addObject("emplist",list);
 		mv.setViewName("success.jsp");
 		return mv;
-		
 	}
 	
 }

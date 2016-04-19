@@ -9,8 +9,7 @@
 </head>
 <body>
 
-	<h2>Registration Success</h2>
-
+	
 	<table border="1">
 		 <tr> 
             <th>Name</th>
@@ -30,6 +29,6 @@
 		</c:forEach>
 	</table><br><br>
 
-	<a href="home.jsp">New Register</a>
+	
 </body>
 </html>
