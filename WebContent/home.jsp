@@ -25,11 +25,10 @@
             <th>Phone</th>
             <th>Profile</th>   
          </tr>
-		<c:forEach items="emplist" var="obj">
+		<c:forEach items="${emplist}" var="obj">
 		<tr onMouseOver="this.className='tablecell_over'" onMouseOut="this.className=''">
-			<!-- <td class="tablecell">hellooooo</td>
-			<td class="tablecell">hellooooooooooooooo</td> -->
-			<td class="tablecell" > <input type="radio" name="selGeoId" value="${obj.id}"></td>
+			
+			<td class="tablecell" > <input type="radio" name="selEmpId" value="${obj.id}"></td>
 			<td class="tablecell">${obj.name}</td>
 			<td class="tablecell">${obj.email}</td>
 			<td class="tablecell">${obj.phone}</td>
