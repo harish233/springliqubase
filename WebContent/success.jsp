@@ -5,13 +5,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>NewtGlobal</title>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
-</head>
-<body>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-	
-	<table border="1">
-		 <tr> 
+
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!-- <script type="text/javascript">
+function getTable(){
+	document.forms[0].action="save.do";
+	//document.forms[0].submit();
+}
+function getList(){
+	document.forms[0].submit();
+}
+</script> -->
+</head>
+<body >
+	 
+	<table align="center" border="1" >
+		 <tr onclick="getList()"> 
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
@@ -28,7 +40,6 @@
 		</tr>
 		</c:forEach>
 	</table><br><br>
-
-	
+ 
 </body>
 </html>

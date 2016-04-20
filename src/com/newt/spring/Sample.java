@@ -28,8 +28,19 @@ public class Sample {
 		ModelAndView mv = new ModelAndView();
 		/*System.out.println("name :"+emp.getName());
 		sampleservice.save(emp);*/
+		
 		List<Employee> list = sampleservice.getRecords();
-		mv.addObject("emplist",list);
+		
+		
+			if(list!=null){
+			mv.addObject("emplist",list);
+			}
+			else{
+				mv.addObject("employee", new Employee());
+			}
+		
+		/*mv.addObject("emplist",list);*/
+		
 		mv.setViewName("success.jsp");
 		return mv;
 	}
