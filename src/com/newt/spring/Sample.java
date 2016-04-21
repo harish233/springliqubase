@@ -28,7 +28,6 @@ public class Sample {
 		ModelAndView mv = new ModelAndView();
 		/*System.out.println("name :"+emp.getName());
 		sampleservice.save(emp);*/
-		
 		List<Employee> list = sampleservice.getRecords();
 		
 		
@@ -44,5 +43,7 @@ public class Sample {
 		mv.setViewName("success.jsp");
 		return mv;
 	}
+	
+	
 	
 }

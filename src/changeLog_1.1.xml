@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+>
+
+<changeSet id="1" author="harish">
+	<tagDatabase tag="version_1.1"/>
+</changeSet>
+
+<changeSet id="2" author="harish">
+	<createTable tableName="employee">
+		<column name="empid" type="varchar2(10)">
+			<constraints nullable="false" primaryKey="true"/>
+		</column>
+		<column name ="first_name" type="varchar2(20)">
+			<constraints nullable="false"/>
+		</column>
+		<column name ="second_name" type="varchar2(20)">
+		</column>
+		<column name="age" type="NUMBER">
+		</column>
+	</createTable>	
+</changeSet>
+
+</databaseChangeLog>
