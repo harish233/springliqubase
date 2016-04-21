@@ -10,7 +10,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 </changeSet>
 
 <changeSet id="2" author="harish">
-	<createTable tableName="employee">
+	<createTable tableName="workers">
 		<column name="empid" type="varchar2(10)">
 			<constraints nullable="false" primaryKey="true"/>
 		</column>

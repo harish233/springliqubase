@@ -12,7 +12,7 @@ import com.newt.service.Sampleservice;
 
 @Controller
 public class Sample {
-
+	
 	@Autowired
 	private Sampleservice sampleservice;
 	

@@ -34,5 +34,11 @@
 	<bean id="template" class="org.springframework.orm.hibernate3.HibernateTemplate">
 		<property name="sessionFactory" ref="sf"/>
 	</bean>
+	
+	<!-- <bean id="liquibase" class="liquibase.integration.spring.SpringLiquibase">
+      <property name="dataSource" ref="ds" />
+      <property name="changeLog" value="classpath:databaseChange.xml" />
+      <property name="contexts" value="test, production" />
+ </bean> -->
 		
 </beans>		

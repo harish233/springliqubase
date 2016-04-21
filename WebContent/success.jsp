@@ -10,16 +10,16 @@
 
 <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 function getTable(){
 	document.forms[0].action="save.do";
 	document.forms[0].submit();
 }
 
-</script>
+</script> -->
 </head>
-<body onload="getTable()">
-	 <form:form commandName="emplist">
+<body > <!-- onload="getTable()" -->
+	<%--  <form:form commandName="emplist"> --%>
 	<table align="center" border="1" >
 		 <tr > 
             <th>Name</th>
@@ -38,6 +38,6 @@ function getTable(){
 		</tr>
 		</c:forEach>
 	</table><br><br>
- </form:form>
+ <%-- </form:form> --%>
 </body>
 </html>
